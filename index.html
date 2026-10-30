@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gitmeden Önce Bil · Yakında</title>
+<meta name="description" content="Dünyanın en kapsamlı seyahat rehberi sizin için hazırlanıyor. Gitmeden önce bilinmesi gereken her şey yakında burada!">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F5F5F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1A15" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%231F6B50' stroke-width='2.5'/%3E%3Cellipse cx='16' cy='16' rx='5.5' ry='13' fill='none' stroke='%231F6B50' stroke-width='2'/%3E%3Cpath d='M3 16h26' stroke='%231F6B50' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#F5F5F1; --ink:#15231D; --ink-2:#33423B; --line:#D9DDD6; --accent:#1F6B50; --globe-fill:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0F1A15; --ink:#EEF2EE; --ink-2:#C3CFC8; --line:#2A3B33; --accent:#6FC9A3; --globe-fill:#15241D; }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  min-height:100vh; min-height:100dvh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:var(--bg); color:var(--ink);
+  font-family:"Source Sans 3", "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  font-size:18px; line-height:1.6;
+  padding:32px 20px;
+}
+main{ width:100%; max-width:640px; text-align:center }
+.globe{ display:block; width:min(420px, 92vw); height:auto; margin:0 auto 12px; overflow:visible }
+.globe .ring{ fill:none; stroke:var(--ink); stroke-width:1.6; opacity:.9 }
+.globe .grid{ fill:none; stroke:var(--accent); stroke-width:1.3; opacity:.75 }
+.globe .disc{ fill:var(--globe-fill); stroke:var(--ink); stroke-width:2 }
+.globe .orbit{ fill:none; stroke:var(--ink); stroke-width:1.2; stroke-dasharray:3 7; opacity:.45 }
+.globe .plane{ fill:var(--accent) }
+.globe .meridian{ transform-box:fill-box; transform-origin:center; vector-effect:non-scaling-stroke; animation:spin 9s ease-in-out infinite alternate }
+.globe .m2{ animation-delay:-2.25s } .globe .m3{ animation-delay:-4.5s } .globe .m4{ animation-delay:-6.75s }
+@keyframes spin{ from{ transform:scaleX(1) } to{ transform:scaleX(.04) } }
+.badge{
+  display:inline-block; margin:8px 0 14px; padding:4px 14px; border-radius:999px;
+  border:1px solid var(--accent); color:var(--accent);
+  font-size:14px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+}
+h1{
+  margin:0 0 20px;
+  font-family:"Newsreader", Georgia, "Times New Roman", serif;
+  font-weight:600; font-size:clamp(38px, 9vw, 60px); line-height:1.05; letter-spacing:-.01em;
+}
+.tr{ margin:0 auto; max-width:30em; font-size:clamp(19px, 3.6vw, 23px); color:var(--ink) }
+hr{ width:56px; margin:28px auto; border:0; border-top:2px solid var(--line) }
+.en{ margin:0 auto; max-width:32em; font-size:17px; color:var(--ink-2) }
+footer{ margin-top:36px; font-size:14px; color:var(--ink-2) }
+.fade{ animation:rise .8s ease-out both }
+.fade.d2{ animation-delay:.15s } .fade.d3{ animation-delay:.3s } .fade.d4{ animation-delay:.45s }
+@keyframes rise{ from{ opacity:0; transform:translateY(10px) } to{ opacity:1; transform:none } }
+@media (prefers-reduced-motion: reduce){
+  .globe .meridian{ animation:none }
+  .globe .m2{ transform:scaleX(.72) } .globe .m3{ transform:scaleX(.38) } .globe .m4{ transform:scaleX(.14) }
+  .fade{ animation:none }
+}
+</style>
+</head>
+<body>
+<main>
+  <svg class="globe fade" viewBox="0 80 400 240" role="img" aria-label="Dönen dünya ve etrafında uçan kâğıt uçak" focusable="false">
+    <g transform="rotate(-20 200 200)">
+      <ellipse class="orbit" cx="200" cy="200" rx="185" ry="52"/>
+    </g>
+    <circle class="disc" cx="200" cy="200" r="110"/>
+    <g class="grid">
+      <ellipse cx="200" cy="200" rx="110" ry="17"/>
+      <ellipse cx="200" cy="150" rx="98" ry="15"/>
+      <ellipse cx="200" cy="250" rx="98" ry="15"/>
+      <ellipse cx="200" cy="115" rx="70" ry="11"/>
+      <ellipse cx="200" cy="285" rx="70" ry="11"/>
+      <ellipse class="meridian m1" cx="200" cy="200" rx="110" ry="110"/>
+      <ellipse class="meridian m2" cx="200" cy="200" rx="110" ry="110"/>
+      <ellipse class="meridian m3" cx="200" cy="200" rx="110" ry="110"/>
+      <ellipse class="meridian m4" cx="200" cy="200" rx="110" ry="110"/>
+    </g>
+    <circle class="ring" cx="200" cy="200" r="110"/>
+    <g transform="rotate(-20 200 200)">
+      <path class="plane" d="M13 0 L-9 -8 L-4 0 L-9 8 Z">
+        <animateMotion dur="14s" repeatCount="indefinite" rotate="auto" path="M15 200 a185 52 0 1 1 370 0 a185 52 0 1 1 -370 0"/>
+      </path>
+    </g>
+  </svg>
+
+  <span class="badge fade d2"><span lang="tr">Yakında</span> · <span lang="en">Coming soon</span></span>
+  <h1 class="fade d2">Gitmeden Önce Bil</h1>
+
+  <p class="tr fade d3" lang="tr">Dünyanın en kapsamlı seyahat rehberi sizin için hazırlanıyor. Gitmeden önce bilinmesi gereken her şey yakında burada!</p>
+  <hr class="fade d3" aria-hidden="true">
+  <p class="en fade d4" lang="en">The world’s most comprehensive travel guide is being prepared for you. Everything you need to know before you go is coming soon!</p>
+
+  <footer class="fade d4">© 2026 Gitmeden Önce Bil</footer>
+</main>
+<script>
+  // Hareketi azalt ayarı açıksa uçak animasyonunu da durdur (SMIL, CSS ile durmaz).
+  try {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelector('svg.globe').pauseAnimations();
+    }
+  } catch (e) {}
+</script>
+</body>
+</html>
